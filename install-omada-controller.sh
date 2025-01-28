@@ -8,7 +8,7 @@
 
 echo -e "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "TP-Link Omada Software Controller - Installer"
-echo "https://github.com/monsn0/omada-installer"
+echo "https://github.com/raiubreaksthings/omada-installer"
 echo -e "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
 
 echo "[+] Verifying running as root"
