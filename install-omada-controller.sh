@@ -1,10 +1,10 @@
 #!/bin/bash
 #title           :install-omada-controller.sh
 #description     :Installer for TP-Link Omada Software Controller
-#supported       :Ubuntu 20.04, Ubuntu 22.04
+#supported       :Ubuntu 24.04.1
 #author          :monsn0
 #date            :2021-07-29
-#updated         :2024-09-28
+#updated         :2025-01-28
 
 echo -e "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "TP-Link Omada Software Controller - Installer"
