@@ -1,7 +1,7 @@
 #!/bin/bash
 #title           :install-omada-controller.sh
 #description     :Installer for TP-Link Omada Software Controller
-#supported       :Ubuntu 24.04.1
+#supported       :Ubuntu 24.04.1 LTS
 #author          :monsn0
 #date            :2021-07-29
 #updated         :2025-01-28
@@ -32,7 +32,7 @@ if [[ $OS = *"Ubuntu 24.04.01"* ]]; then
 elif [[ $OS = *"Ubuntu 24.04.01"* ]]; then
     OsVer=jammy
 else
-    echo -e "\e[1;31m[!] Script currently only supports Ubuntu 20.04 or 22.04! \e[0m"
+    echo -e "\e[1;31m[!] Script currently only supports Ubuntu 24.04.1 LTS! \e[0m"
     exit
 fi
 
