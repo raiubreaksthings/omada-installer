@@ -23,19 +23,6 @@ if ! lscpu | grep -iq avx; then
     exit
 fi
 
-echo "[+] Verifying supported OS"
-OS=$(hostnamectl status | grep "Operating System" | sed 's/^[ \t]*//')
-echo "[~] $OS"
-
-if [[ $OS = *"Ubuntu 24.04.01"* ]]; then
-    OsVer=focal
-elif [[ $OS = *"Ubuntu 24.04.01"* ]]; then
-    OsVer=jammy
-else
-    echo -e "\e[1;31m[!] Script currently only supports Ubuntu 24.04.1 LTS! \e[0m"
-    exit
-fi
-
 echo "[+] Installing script prerequisites"
 apt-get -qq update
 apt-get -qq install gnupg curl wget &> /dev/null
