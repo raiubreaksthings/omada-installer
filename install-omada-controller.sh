@@ -28,7 +28,7 @@ apt-get -qq update
 apt-get -qq install gnupg curl wget &> /dev/null
 
 echo "[+] Importing the MongoDB 7.0 PGP key and creating the APT repository"
-curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+curl -fsSL https://repo.mongodb.org/apt/ubuntu/dists/jammy/mongodb-org/7.0/Release.gpg | gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu $OsVer/mongodb-org/7.0 multiverse" > /etc/apt/sources.list.d/mongodb-org-7.0.list
 apt-get -qq update
 
